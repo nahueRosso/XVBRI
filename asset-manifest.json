@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/XVBRI/static/css/main.81a7b875.css",
+    "main.js": "/XVBRI/static/js/main.4aa47c5c.js",
+    "static/js/453.4e6814b9.chunk.js": "/XVBRI/static/js/453.4e6814b9.chunk.js",
+    "static/media/bkg-sinfiltro_1.png": "/XVBRI/static/media/bkg-sinfiltro_1.bc0d70cdbffb950e8add.png",
+    "static/media/IMG-2.jpg": "/XVBRI/static/media/IMG-2.d384612388182f5d3eb7.jpg",
+    "static/media/IMG-4.jpg": "/XVBRI/static/media/IMG-4.62dda15c5e289a92d23d.jpg",
+    "static/media/Brisa_foto_ultima.png": "/XVBRI/static/media/Brisa_foto_ultima.333dbd6ae3c9ef7d80fc.png",
+    "static/media/rosita.jpg": "/XVBRI/static/media/rosita.a182f7084b9c77902695.jpg",
+    "static/media/play-1.png": "/XVBRI/static/media/play-1.0a8aec7a3396c21322b0.png",
+    "index.html": "/XVBRI/index.html",
+    "main.81a7b875.css.map": "/XVBRI/static/css/main.81a7b875.css.map",
+    "main.4aa47c5c.js.map": "/XVBRI/static/js/main.4aa47c5c.js.map",
+    "453.4e6814b9.chunk.js.map": "/XVBRI/static/js/453.4e6814b9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81a7b875.css",
+    "static/js/main.4aa47c5c.js"
+  ]
+}
