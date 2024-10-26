@@ -1,21 +1,26 @@
 {
   "files": {
     "main.css": "/XVBRI/static/css/main.81a7b875.css",
-    "main.js": "/XVBRI/static/js/main.4aa47c5c.js",
+    "main.js": "/XVBRI/static/js/main.4749551e.js",
     "static/js/453.4e6814b9.chunk.js": "/XVBRI/static/js/453.4e6814b9.chunk.js",
     "static/media/bkg-sinfiltro_1.png": "/XVBRI/static/media/bkg-sinfiltro_1.bc0d70cdbffb950e8add.png",
+    "static/media/Brisa_portada.png": "/XVBRI/static/media/Brisa_portada.478a83f86fe6d49ec83d.png",
+    "static/media/BensonBoone.mp3": "/XVBRI/static/media/BensonBoone.f1829dbff5da8506137c.mp3",
+    "static/media/BensonBoone.ogg": "/XVBRI/static/media/BensonBoone.ba7a98e2fabefc40d114.ogg",
+    "static/media/Brisa_foto2_t_s.png": "/XVBRI/static/media/Brisa_foto2_t_s.ae2539a19bd5c8548643.png",
     "static/media/IMG-2.jpg": "/XVBRI/static/media/IMG-2.d384612388182f5d3eb7.jpg",
     "static/media/IMG-4.jpg": "/XVBRI/static/media/IMG-4.62dda15c5e289a92d23d.jpg",
     "static/media/Brisa_foto_ultima.png": "/XVBRI/static/media/Brisa_foto_ultima.333dbd6ae3c9ef7d80fc.png",
+    "static/media/Brisa_foto4_t.png": "/XVBRI/static/media/Brisa_foto4_t.cf54c27b418547681b17.png",
     "static/media/rosita.jpg": "/XVBRI/static/media/rosita.a182f7084b9c77902695.jpg",
     "static/media/play-1.png": "/XVBRI/static/media/play-1.0a8aec7a3396c21322b0.png",
     "index.html": "/XVBRI/index.html",
     "main.81a7b875.css.map": "/XVBRI/static/css/main.81a7b875.css.map",
-    "main.4aa47c5c.js.map": "/XVBRI/static/js/main.4aa47c5c.js.map",
+    "main.4749551e.js.map": "/XVBRI/static/js/main.4749551e.js.map",
     "453.4e6814b9.chunk.js.map": "/XVBRI/static/js/453.4e6814b9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81a7b875.css",
-    "static/js/main.4aa47c5c.js"
+    "static/js/main.4749551e.js"
   ]
 }
