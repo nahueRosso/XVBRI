@@ -170,6 +170,7 @@ function App() {
       <audio 
         ref={audioRef} 
         loop 
+        autoPlay
         onError={() => console.error("Error loading audio")} 
         onCanPlay={() => console.log("Audio is ready to play")}
       >
