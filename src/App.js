@@ -1,4 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
+import Brisa_portada from './Brisa_portada.png';
+import Brisa_foto2 from './Brisa_foto2_t_s.png';
+import Brisa_relleno from './Brisa_box_relleno.png';
+import brisa_foto4 from './Brisa_foto4_t.png';
+import regalo from './regalo-pintado.png';
+import ogg from './BensonBoone.ogg'
+import mp3 from './BensonBoone.mp3'
 import './App.css'; 
 import CountdownTimer from './module';
 
@@ -166,8 +173,8 @@ function App() {
         onError={() => console.error("Error loading audio")} 
         onCanPlay={() => console.log("Audio is ready to play")}
       >
-        <source src="/BensonBoone.mp3" type="audio/mpeg" />
-        <source src="/BensonBoone.ogg" type="audio/ogg" />
+        <source src={mp3} type="audio/mpeg" />
+        <source src={ogg} type="audio/ogg" />
         Tu navegador no soporta la etiqueta de audio.
       </audio>
 
@@ -175,8 +182,8 @@ function App() {
         </button>  
 
 
-      <img src="/Brisa_portada.png" className="App-img-1" alt="logo" />
-      <img src="/Brisa_box_relleno.png" className="App-img-relleno" alt="logo" />
+      <img src={Brisa_portada} className="App-img-1" alt="logo" />
+      <img src={Brisa_relleno} className="App-img-relleno" alt="logo" />
       
       <div className='App-box-1'>
       <h2 style={{textShadow: '-10px 10px 30px rgba(172, 144, 134, 1)'}}>LOS XV DE BRI</h2>
@@ -203,7 +210,7 @@ function App() {
           </div>
         </div>
       </div>
-      <img src="/Brisa_foto2_t_s.png" className="App-img-1 cuadro-sombra" alt="logo" />
+      <img src={Brisa_foto2} className="App-img-1 cuadro-sombra" alt="logo" />
 
       <div className='App-box-hour'>
       <a href="https://maps.app.goo.gl/KMiBq2sj7DmJ37Jo8" className='App-box-last-child'>
@@ -212,8 +219,8 @@ function App() {
 
       </div>
 
-      <img src="/Brisa_box_relleno.png" className="App-img-relleno" alt="logo" />
-      <img src="/Brisa_foto4_t.png" className="App-img-1" alt="logo" />
+      <img src={Brisa_relleno} className="App-img-relleno" alt="logo" />
+      <img src={brisa_foto4} className="App-img-1" alt="logo" />
 
       <div className='App-box-2'>
         <div ref={imgBoxRef1} className={`img-box img-1 ${isVisible1 ? 'visible' : ''}`}></div>
@@ -239,7 +246,7 @@ function App() {
       {/* Si te pinta, acá podés dejar tu regalo */}
       </h4>
       <a id='titulo' href="#" className={`App-box-3-button fade ${showTitle ? 'visible' : 'hidden'}`} style={{ width: '8vw' }} onClick={toggleVisibility}>
-        <img src="/regalo-pintado.png" className="regalo-icon" alt="logo" />
+        <img src={regalo} className="regalo-icon" alt="logo" />
       </a>
     </div>
 
