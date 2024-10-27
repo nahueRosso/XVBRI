@@ -312,3 +312,15 @@ strong {
   visibility: hidden;
   transition: opacity 1.5s ease;  
 }
+
+
+/* App.css */
+.hidden-box {
+  opacity: 0; /* La caja está oculta */
+  transition: opacity 0.5s ease-in-out; /* Transición suave para la opacidad */
+}
+
+.visible-box {
+  opacity: 1; /* La caja es visible */
+  transition: opacity 0.5s ease-in-out; /* Transición suave para la opacidad */
+}

@@ -8,6 +8,7 @@ import ogg from './BensonBoone.ogg'
 import mp3 from './BensonBoone.mp3'
 import './App.css'; 
 import CountdownTimer from './module';
+import LazyImage from './Lazy'
 
 function App() {
   const [timeLeft, setTimeLeft] = useState({});
@@ -165,6 +166,17 @@ function App() {
 };
 
 
+const [isContentVisible, setIsContentVisible] = useState(false);
+
+  useEffect(() => {
+    // Aquí podrías añadir una condición para determinar cuándo las cajas deberían ser visibles
+    const timeout = setTimeout(() => {
+      setIsContentVisible(true);
+    }, 1000); // Cambia el tiempo según tus necesidades
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <div className="App">
       <audio 
@@ -181,13 +193,14 @@ function App() {
 
       <button className={isPlaying ? 'button-music stop-music' : 'button-music play-music'} onClick={togglePlayPause}>
         </button>  
+        <LazyImage src={Brisa_portada} className="App-img-1" alt="Brisa portada" />
+        {/* <LazyImage src={Brisa_relleno} className="App-img-relleno" alt="Brisa relleno" /> */}
 
-
-      <img src={Brisa_portada} className="App-img-1" alt="logo" />
+      {/* <img src={Brisa_portada} className="App-img-1" alt="logo" /> */}
       <img src={Brisa_relleno} className="App-img-relleno" alt="logo" />
       
-      <div className='App-box-1'>
-      <h2 style={{textShadow: '-10px 10px 30px rgba(172, 144, 134, 1)'}}>LOS XV DE BRI</h2>
+      <div className={`App-box-1 ${isContentVisible ? 'visible-box box-transition' : 'hidden-box'}`}>
+        <h2 style={{ textShadow: '-10px 10px 30px rgba(172, 144, 134, 1)' }}>LOS XV DE BRI</h2>
         <div className='App-box-child_hour-ajust'>
           <div className='App-box-child_hour'>
             <CountdownTimer onTimeUpdate={setTimeLeft} />
@@ -197,7 +210,7 @@ function App() {
           <div className='App-box-child_hour'>
             <CountdownTimer onTimeUpdate={setTimeLeft} />
             <h3>{timeLeft.hours}</h3>
-            <h5>Horas</h5> 
+            <h5>Horas</h5>
           </div>
           <div className='App-box-child_hour'>
             <CountdownTimer onTimeUpdate={setTimeLeft} />
@@ -211,7 +224,10 @@ function App() {
           </div>
         </div>
       </div>
-      <img src={Brisa_foto2} className="App-img-1 cuadro-sombra" alt="logo" />
+      <LazyImage src={Brisa_foto2} className="App-img-1 cuadro-sombra" alt="Brisa foto 2" />
+      {/* <LazyImage src={brisa_foto4} className="App-img-1" alt="Brisa foto 4" /> */}
+
+      {/* <img src={Brisa_foto2} className="App-img-1 cuadro-sombra" alt="logo" /> */}
 
       <div className='App-box-hour'>
       <a href="https://maps.app.goo.gl/KMiBq2sj7DmJ37Jo8" className='App-box-last-child'>
@@ -221,7 +237,10 @@ function App() {
       </div>
 
       <img src={Brisa_relleno} className="App-img-relleno" alt="logo" />
-      <img src={brisa_foto4} className="App-img-1" alt="logo" />
+      {/* <LazyImage src={Brisa_foto2} className="App-img-1 cuadro-sombra" alt="Brisa foto 2" /> */}
+      <LazyImage src={brisa_foto4} className="App-img-1" alt="Brisa foto 4" />
+
+      {/* <img src={brisa_foto4} className="App-img-1" alt="logo" /> */}
 
       <div className='App-box-2'>
         <div ref={imgBoxRef1} className={`img-box img-1 ${isVisible1 ? 'visible' : ''}`}></div>
