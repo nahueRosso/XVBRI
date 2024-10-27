@@ -169,10 +169,9 @@ function App() {
 const [isContentVisible, setIsContentVisible] = useState(false);
 
   useEffect(() => {
-    // Aquí podrías añadir una condición para determinar cuándo las cajas deberían ser visibles
     const timeout = setTimeout(() => {
       setIsContentVisible(true);
-    }, 1000); // Cambia el tiempo según tus necesidades
+    }, 1000); 
 
     return () => clearTimeout(timeout);
   }, []);
@@ -194,9 +193,6 @@ const [isContentVisible, setIsContentVisible] = useState(false);
       <button className={isPlaying ? 'button-music stop-music' : 'button-music play-music'} onClick={togglePlayPause}>
         </button>  
         <LazyImage src={Brisa_portada} className="App-img-1" alt="Brisa portada" />
-        {/* <LazyImage src={Brisa_relleno} className="App-img-relleno" alt="Brisa relleno" /> */}
-
-      {/* <img src={Brisa_portada} className="App-img-1" alt="logo" /> */}
       <img src={Brisa_relleno} className="App-img-relleno" alt="logo" />
       
       <div className={`App-box-1 ${isContentVisible ? 'visible-box box-transition' : 'hidden-box'}`}>
@@ -229,7 +225,7 @@ const [isContentVisible, setIsContentVisible] = useState(false);
 
       {/* <img src={Brisa_foto2} className="App-img-1 cuadro-sombra" alt="logo" /> */}
 
-      <div className='App-box-hour'>
+      <div className={`App-box-hour ${isContentVisible ? 'visible-box box-transition' : 'hidden-box'}`}> 
       <a href="https://maps.app.goo.gl/KMiBq2sj7DmJ37Jo8" className='App-box-last-child'>
           <h4>UBICACIÓN</h4>
         </a>
